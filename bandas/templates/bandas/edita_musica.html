@@ -1,0 +1,26 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h3>Edita Música</h3>
+
+    <form action="{% url 'bandas:edita_musica' musica.id %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+
+    {% if user.is_authenticated %}
+        {% for group in user.groups.all %}
+            {% if group.name == 'editores_bandas' %}
+                <a href="{% url 'bandas:banda' musica.album.banda.id %}">
+                    <button>Cancelar</button>
+                </a>
+            {% endif %}
+        {% endfor %}
+        <a href="{% url 'bandas:apaga_musica' musica.id %}">
+            <button>Apagar Música</button>
+        </a>
+    {% endif %}
+
+    <button type="button" onclick="window.history.back()">Cancelar</button>
+{% endblock %}

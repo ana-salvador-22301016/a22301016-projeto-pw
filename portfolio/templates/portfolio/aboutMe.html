@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+{% extends 'portfolio/layout.html' %}
+{% block content %}
+<html>
+
+<head>
+    <title>About Me</title>
+    <style>
+        .subheader {
+            text-align: center;
+        }
+
+        /* Styling for the side menu */
+        #sideMenu {
+            position: absolute;
+            top: 84px;
+            width: 172px;
+            height: 250px; /* Adjusted height to accommodate new section */
+            background-color: #bb86fc;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            right: -250px; /* Initially hide off-screen */
+        }
+
+        #sideMenu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #sideMenu ul li {
+            padding: 10px;
+        }
+
+        #sideMenu ul li a {
+            color: #000;
+            text-decoration-color: aqua;
+            display: block;
+            cursor: pointer;
+        }
+
+        #sideMenu ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Styling for the main content */
+        #mainContent {
+            margin-top: 60px;
+            text-align: left;
+            position: fixed;
+            padding: 18px;
+            margin-right: 50px;
+            color: White;
+        }
+
+        /* Styling for the buttons */
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Hide all tab contents except the first one */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content:first-child {
+            display: block;
+        }
+
+        /* Styling for the menu toggle button */
+        #menuToggle {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            display: inline-block;
+            padding: 13px;
+            background-color: #b36af1;
+            text-decoration: none;
+            border-radius: 24px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        #menuToggle span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            margin: 4px auto;
+            background-color: #fff;
+        }
+
+        #menuToggle:hover {
+            background-color: #555;
+        }
+
+        /* Styling for the CV container */
+        .cv-container {
+            max-width: 100%;
+            max-height: 400px; /* Adjust the height as needed */
+            overflow: auto;
+            margin: 0 auto; /* Center the container */
+        }
+
+        .cv-image {
+            max-width: 50%; /* Adjust the width as needed */
+            max-height: 50%; /* Adjust the height as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="sideMenu">
+        <ul>
+            <li><a href="#about" data-tab="about">Sobre mim</a></li>
+            <li><a href="#interests" data-tab="interests">Interesses</a></li>
+            <li><a href="#competencies" data-tab="competencies">Competencias</a></li>
+            <li><a href="#experience" data-tab="experience">Experência</a></li>
+            <li><a href="#cv" data-tab="cv">CV</a></li>
+        </ul>
+    </div>
+
+    <div id="mainContent">
+        <div id="about" class="tab-content active">
+            <h2>Sobre mim</h2>
+            {% for mebyme in mebymes %}
+                <p>{{ mebyme.about }}</p>
+            {% endfor %}
+        </div>
+
+        <div id="interests" class="tab-content">
+            <h2>Interesses</h2>
+            {% for mebyme in mebymes %}
+                <p>{{ mebyme.interesses }}</p>
+            {% endfor %}
+        </div>
+
+        <div id="competencies" class="tab-content">
+            <h2>Competencias</h2>
+            {% for mebyme in mebymes %}
+                <p>{{ mebyme.competencias }}</p>
+            {% endfor %}
+        </div>
+
+        <div id="experience" class="tab-content">
+            <h2>Experience</h2>
+            {% for mebyme in mebymes %}
+                <p>{{ mebyme.experiencia }}</p>
+            {% endfor %}
+        </div>
+
+        <div id="cv" class="tab-content">
+            <h2>CV</h2>
+            {% for mebyme in mebymes %}
+                {% if mebyme.cv %}
+                    <div class="cv-container">
+                        <img src="{{ mebyme.cv.url }}" alt="CV" class="cv-image" />
+                    </div>
+                {% else %}
+                    <p>Indisponivel</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        // Script to handle side menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sideMenu = document.getElementById('sideMenu');
+            var mainContent = document.getElementById('mainContent');
+            if (sideMenu.style.right === '-250px' || sideMenu.style.right === "") {
+                sideMenu.style.right = '0';
+                mainContent.style.marginRight = '250px';
+            } else {
+                sideMenu.style.right = '-250px';
+                mainContent.style.marginRight = '0';
+            }
+        });
+
+        // Script to handle tab switching
+        var menuLinks = document.querySelectorAll('#sideMenu ul li a');
+        var tabContents = document.querySelectorAll('.tab-content');
+
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var tabId = this.getAttribute('data-tab');
+
+                tabContents.forEach(function(content) {
+                    if (content.id === tabId) {
+                        content.style.display = 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+
+                // Hide the side menu after a selection is made
+                document.getElementById('sideMenu').style.right = '-250px';
+                document.getElementById('mainContent').style.marginRight = '0';
+            });
+        });
+    </script>
+</body>
+
+</html>
+{% endblock %}

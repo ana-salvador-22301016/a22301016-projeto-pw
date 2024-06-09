@@ -1,0 +1,24 @@
+{% extends 'bandas/layout.html' %}
+{% block content %}
+{% for banda in bandas %}
+    {% load static %}
+    {% if banda.foto %}
+        <img src="{{ banda.foto.url }}" alt="Foto da banda">
+    {% endif %}
+
+    <h3>{{ banda.nome }}</h3>
+    <p>Nacionalidade: {{ banda.nacionalidade }}</p>
+    <p>Biografia: {{ banda.biografia }}</p>
+    <p>Ano de criação: {{ banda.ano_de_criacao }}</p>
+    <p>Álbum da banda <a href="{% url 'bandas:banda_album' banda.id %}">{{ banda.nome }}</a></p>
+    <a href="{% url 'bandas:edita_banda' banda.id %}">
+        <button>Editar informação da banda</button>
+    </a>
+    <a href="{% url 'bandas:apaga_banda' banda.id %}">
+        <button>Apagar a banda</button>
+    </a>
+{% endfor %}
+<p><a href="{% url 'bandas:nova_banda' %}">
+    <button>Inserir nova banda</button>
+</a></p>
+{% endblock %}

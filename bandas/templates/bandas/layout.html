@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bandas</title>
+    {% load static %}
+        <p><a href="/"  target="_blank">Portfolio</a></p>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5d1319edfb.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="{% static 'bandas/estilos.css' %}">
+
+    <!-- Bloco de Estilos Específicos -->
+    <style>
+        {% block style %}
+        {% endblock %}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bandas Musicais</h1>
+    </header>
+
+    <nav>
+
+        {% if request.user.is_authenticated %}
+            Username:{{request.user.username}}
+            <a href="{% url 'autenticacao:logout' %}"><button>Logout</button></a>
+        {% else %}
+            <a href="{% url 'autenticacao:login' %}"><button>Login</button></a>
+        {% endif %}
+
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+
+</body>
+</html>

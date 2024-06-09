@@ -1,0 +1,21 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+
+{% load static %}
+{% for dic in climaDetalhes %}
+
+<div class = 'cartas'>
+    <p>Data atual: {{dic.dataAtual}}</p>
+    <p>Temperatura minima: {{dic.tmpMin}}</p>
+    <p>Temperatura maxima: {{dic.tmpMax}}</p>
+    <p>Descricao: {{dic.desTmp}}</p>
+    <img src="{% static 'meteo/' %}{{ dic.svg }}" alt="Weather Animation" >
+</div>
+
+
+
+
+{% endfor %}
+
+{% endblock %}

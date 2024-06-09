@@ -1,0 +1,32 @@
+{%extends 'autenticacao/layout.html'%}
+
+{% block content %}
+
+    <h3>Bem vido, {{request.user.first_name}} {{request.user.last_name}}</h3>
+
+    <ul>
+      <li>Username: {{request.user.username}}</li>
+      <li>Email: {{request.user.email}}</li>
+    </ul>
+
+    <a href="{% url 'autenticacao:logout' %}">Logout</a>
+
+  <h3>Suas aplicações:</h3>
+    <u>
+    <a href="{% url 'bandas:bandas' %}">Bandas</a>
+    </u>
+    <br>
+
+    <u>
+    <a href="{% url 'curso:curso' %}">Curso</a>
+    </u>
+    <br>
+
+    <u>
+    <a href="{% url 'artigo:artigo' %}">Artigos</a>
+    </u>
+
+{% endblock %}
+
+
+

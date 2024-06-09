@@ -1,0 +1,33 @@
+{% extends 'praias/layout.html' %}
+
+
+{% block content %}
+
+
+<h1>Lisboa</h1>
+    <ul>
+    {% for praia in praias_lisboa %}
+        <li>
+            <a href="{% url 'praias:praia' praia.id %}"> {{ praia }}</a>
+            <span>Serviços:</span>
+            {% for servico in praia.servicos.all %}
+                <span> {{servico}},</span>
+            {% endfor %}
+        </li>
+    {% endfor %}
+    </ul>
+
+<h1>Algarve</h1>
+    <ul>
+    {% for praia in praias_algarve %}
+        <li>
+            <a href="{% url 'praias:praia' praia.id %}"> {{ praia }}</a>
+            <span>Serviços:</span>
+            {% for servico in praia.servicos.all %}
+                <span> {{servico}},</span>
+            {% endfor %}
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

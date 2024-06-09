@@ -1,0 +1,46 @@
+<!-- curso.html -->
+{% extends 'curso/layout.html' %}
+
+{% block content %}
+
+{% for infocurso in cursos %}
+
+    <h2>{{ infocurso.nome }}</h2>
+
+    <h4>Apresentação do Curso</h4>
+    <p>{{ infocurso.apresentacao }}</p>
+
+    <h4>Objetivos do Curso</h4>
+    <p>{{ infocurso.objetivo }}</p>
+
+    <h4>Competências Desenvolvidas</h4>
+    <p>{{ infocurso.competencia }}</p>
+
+    <h4>Disciplinas:</h4>
+    <ul>
+        {% for disciplina in infocurso.disciplinas.all %}
+            <li>
+                <a href="{% url 'curso:detalhe_disciplina' disciplina.id %}">{{ disciplina.nome }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'curso:edita_curso' infocurso.id %}">
+        <button>Editar informação do curso</button>
+    </a>
+
+
+    <a href="{% url 'curso:apaga_curso' infocurso.id %}">
+      <button>Apagar o curso</button>
+    </a>
+
+
+{%endfor%}
+
+<p><a href="{% url 'curso:novo_curso' %}">
+        <button>Inserir novo curso</button>
+    </a></p>
+
+
+{% endblock %}
+

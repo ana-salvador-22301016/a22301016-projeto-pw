@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+<head>
+    <title>PORTFOLIO</title>
+        <link rel="stylesheet" href="{% static 'portfolio/css/estilos.css' %}">
+<style>
+     .background-image {
+            background: url('{% static "portfolio/img/road.jpg" %}') no-repeat center center/cover;
+            height: 100vh; /* Ensure the background covers the entire viewport height */
+            margin: 0; /* Remove default margin */
+        }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+            <body class="background-image">
+
+        <header>
+            <a href="{% url 'intro_view' %}"><button>Inicio</button></a>
+            <a href="{% url 'allAppview' %}"><button>Aplicações</button></a>
+            <a href="{% url 'tech_presentation' %}"><button>Tecnologias</button></a>
+            <a href="{% url 'mebyme_detail' %}"><button>Sobre mim</button></a>
+            <a href="{% url 'video' %}"><button>Video</button></a>
+
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>ANA SALVADOR</p>
+        </footer>
+    </div>
+</body>
+</html>

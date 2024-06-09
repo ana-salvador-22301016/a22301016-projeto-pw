@@ -1,0 +1,33 @@
+{% extends 'curso/layout.html' %}
+
+{% block content %}
+
+    <h2>Detalhes da Disciplina</h2>
+
+    <h3>{{ disciplina.nome }}</h3>
+    <p>Ano: {{ disciplina.ano }}</p>
+    <p>Semestre: {{ disciplina.semestre }}</p>
+    <p>ECTS: {{ disciplina.ects }}</p>
+    <p>Código: {{ disciplina.curricularIUnitReadableCode }}</p>
+    <p>Área Científica: {{ disciplina.areaCientifica }}</p>
+
+
+
+    <a href="{% url 'curso:edita_disciplina' disciplina.id %}">
+        <button>Editar disciplina</button>
+    </a>
+
+
+    <a href="{% url 'curso:apaga_disciplina' disciplina.id %}">
+      <button>Apaga a disciplina</button>
+    </a>
+
+    {% for disciplina in disciplinas%}
+
+    <a href="{% url 'curso:nova_disciplina' disciplina.curso.id %}">
+            <button>Inserir nova disciplina</button>
+    </a>
+    {%endfor%}
+   <p> <a href="{% url 'curso:curso' %}">Voltar para a lista de cursos</a></p>
+
+{% endblock %}

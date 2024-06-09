@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões para hobbies</title>
+
+    <h1>Escolhe da pirâmide etária a faixa que desejas conhecer sugestões de hobbies:</h1>
+
+    <nav>
+    <a href="{% url 'guia_de_hobbies:hobbies_criancas' %}">CRIANÇAS</a>
+    </nav>
+
+    <nav>
+    <a href="{% url 'guia_de_hobbies:hobbies_adolescentes' %}">ADOLESCENTES</a>
+    </nav>
+
+    <nav>
+    <a href="{% url 'guia_de_hobbies:hobbies_jovens' %}">JOVENS</a>
+    </nav>
+
+    <nav>
+    <a href="{% url 'guia_de_hobbies:hobbies_idosos' %}">IDOSOS</a>
+    </nav>
+
+    <style>
+        body {
+            background: beige;
+            color: black;
+        }
+    </style>

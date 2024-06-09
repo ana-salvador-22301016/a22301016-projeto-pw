@@ -1,0 +1,14 @@
+
+
+
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+    <ul>
+    {% for artigo in artigos %}
+            <li>
+                <a href="{% url 'artigos:detail_view' artigo.id %}">{{ artigo.post }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

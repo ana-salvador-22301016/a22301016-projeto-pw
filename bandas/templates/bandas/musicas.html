@@ -1,0 +1,41 @@
+{% extends 'bandas/layout.html' %}
+
+
+{% block content %}
+
+<nav>
+    <a href="{% url 'bandas:albuns' %}">Album</a>
+</nav>
+
+{% for musica in musicas %}
+    <h3>{{ musica.titulo }}</h3>
+    <p> Álbum: {{ musica.album }}</p>
+    <p> Data de lançamento: {{ musica.data }}</p>
+    <p> Duração: {{ musica.duracao }}</p>
+    {% if musica.letra %}
+        <p>Letra:</p>
+        <p>{{ musica.letra }}</p>
+    {% endif %}
+    <p> Biografia: {{ musica.biografia }}</p>
+        {% if musica.spotify_link %}
+        <p> Spotify: <a href="{{ musica.spotify_link }}">Ouça no Spotify</a></p>
+    {% endif %}
+
+    <P><a href="{% url 'bandas:nova_musica' musica.album.id %}">
+        <button>Inserir nova musica</button>
+    </a></P>
+
+        <a href="{% url 'bandas:edita_musica' musica.id %}">
+                <button>Editar informação da musica</button>
+            </a>
+
+
+     <a href="{% url 'bandas:apaga_musica' musica.id %}">
+      <button>Apaga a musica</button>
+    </a>
+    {% endfor %}
+
+
+
+
+{% endblock %}

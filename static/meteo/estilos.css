@@ -1,0 +1,108 @@
+/* Configurações gerais */
+body {
+    grid-template-areas:
+    'header'
+    'texto'
+    'meteo'
+    'footer';
+    gap: 0.5%;
+    grid-template-rows: 10% 18% 65% 7%;
+    background: linear-gradient(to right, #add8e6, #87ceeb); /* Gradiente azul bebê */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Fonte Google Montserrat */
+    color: #333; /* Texto cinza escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    grid-area : header
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do rodapé */
+footer {
+    grid-area: footer
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixo no rodapé da página */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo de links e botões */
+a {
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6495ed;
+}
+
+/* Estilo de botões primários */
+button, .btn-primary {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #6495ed;
+    transform: scale(1.05);
+}
+
+div.Sessao_meteo {
+grid-area: meteo
+
+}
+
+div.Sessao_texto {
+grid-area: texto
+
+}
+
+div.cartas{
+    position:relative;
+    background-color: white;
+    color:  #002540;
+    border-radius: 20px;
+    padding: 3%;
+    margin: 2%;
+    width: 10%;
+    height: 32%;
+    text-align: center;
+
+}
+div.cartas img{
+    width: 50%;
+
+}

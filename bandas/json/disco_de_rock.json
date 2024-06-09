@@ -1,0 +1,332 @@
+[
+    {
+        "banda": "Led Zeppelin",
+        "discos": [
+            {
+                "titulo": "Led Zeppelin",
+                "ano_lancamento": 1969,
+                "musicas": [
+                    {"titulo": "Good Times Bad Times", "duracao": "02:47"},
+                    {"titulo": "Babe I'm Gonna Leave You", "duracao": "06:42"},
+                    {"titulo": "Dazed and Confused", "duracao": "06:28"},
+                    {"titulo": "Communication Breakdown", "duracao": "02:30"},
+                    {"titulo": "I Can't Quit You Baby", "duracao": "04:42"},
+                    {"titulo": "How Many More Times", "duracao": "08:28"}
+                ]
+            },
+            {
+                "titulo": "Led Zeppelin II",
+                "ano_lancamento": 1969,
+                "musicas": [
+                    {"titulo": "Whole Lotta Love", "duracao": "05:34"},
+                    {"titulo": "What Is and What Should Never Be", "duracao": "04:46"},
+                    {"titulo": "The Lemon Song", "duracao": "06:19"},
+                    {"titulo": "Thank You", "duracao": "04:49"},
+                    {"titulo": "Heartbreaker", "duracao": "04:14"},
+                    {"titulo": "Living Loving Maid (She's Just a Woman)", "duracao": "02:39"},
+                    {"titulo": "Ramble On", "duracao": "04:23"},
+                    {"titulo": "Moby Dick", "duracao": "04:20"},
+                    {"titulo": "Bring It On Home", "duracao": "04:19"}
+                ]
+            },
+            {
+                "titulo": "Led Zeppelin III",
+                "ano_lancamento": 1970,
+                "musicas": [
+                    {"titulo": "Immigrant Song", "duracao": "02:26"},
+                    {"titulo": "Friends", "duracao": "03:55"},
+                    {"titulo": "Celebration Day", "duracao": "03:29"},
+                    {"titulo": "Since I've Been Loving You", "duracao": "07:24"},
+                    {"titulo": "Out on the Tiles", "duracao": "04:04"},
+                    {"titulo": "Gallows Pole", "duracao": "04:56"},
+                    {"titulo": "Tangerine", "duracao": "03:12"},
+                    {"titulo": "That's the Way", "duracao": "05:38"},
+                    {"titulo": "Bron-Y-Aur Stomp", "duracao": "04:16"},
+                    {"titulo": "Hats Off to (Roy) Harper", "duracao": "03:42"}
+                ]
+            },
+            {
+                "titulo": "Untitled (Led Zeppelin IV)",
+                "ano_lancamento": 1971,
+                "musicas": [
+                    {"titulo": "Black Dog", "duracao": "04:55"},
+                    {"titulo": "Rock and Roll", "duracao": "03:40"},
+                    {"titulo": "The Battle of Evermore", "duracao": "05:52"},
+                    {"titulo": "Stairway to Heaven", "duracao": "08:02"},
+                    {"titulo": "Misty Mountain Hop", "duracao": "04:39"},
+                    {"titulo": "Four Sticks", "duracao": "04:44"},
+                    {"titulo": "Going to California", "duracao": "03:31"},
+                    {"titulo": "When the Levee Breaks", "duracao": "07:07"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "The Beatles",
+        "discos": [
+            {
+                "titulo": "Please Please Me",
+                "ano_lancamento": 1963,
+                "musicas": [
+                    {"titulo": "I Saw Her Standing There", "duracao": "02:55"},
+                    {"titulo": "Misery", "duracao": "01:49"},
+                    {"titulo": "Anna (Go to Him)", "duracao": "02:57"},
+                    {"titulo": "Chains", "duracao": "02:23"},
+                    {"titulo": "Boys", "duracao": "02:27"},
+                    {"titulo": "Ask Me Why", "duracao": "02:26"},
+                    {"titulo": "Please Please Me", "duracao": "02:03"},
+                    {"titulo": "Love Me Do", "duracao": "02:22"},
+                    {"titulo": "P.S. I Love You", "duracao": "02:05"},
+                    {"titulo": "Baby It's You", "duracao": "02:39"},
+                    {"titulo": "Do You Want to Know a Secret", "duracao": "01:59"},
+                    {"titulo": "A Taste of Honey", "duracao": "02:03"},
+                    {"titulo": "There's a Place", "duracao": "01:52"},
+                    {"titulo": "Twist and Shout", "duracao": "02:33"}
+                ]
+            },
+            {
+                "titulo": "With the Beatles",
+                "ano_lancamento": 1963,
+                "musicas": [
+                    {"titulo": "It Won't Be Long", "duracao": "02:13"},
+                    {"titulo": "All I've Got to Do", "duracao": "02:03"},
+                    {"titulo": "All My Loving", "duracao": "02:08"},
+                    {"titulo": "Don't Bother Me", "duracao": "02:28"},
+                    {"titulo": "Little Child", "duracao": "01:46"},
+                    {"titulo": "Till There Was You", "duracao": "02:15"},
+                    {"titulo": "Please Mister Postman", "duracao": "02:36"},
+                    {"titulo": "Roll Over Beethoven", "duracao": "02:44"},
+                    {"titulo": "Hold Me Tight", "duracao": "02:33"},
+                    {"titulo": "You Really Got a Hold on Me", "duracao": "02:59"},
+                    {"titulo": "I Wanna Be Your Man", "duracao": "01:59"},
+                    {"titulo": "Devil in Her Heart", "duracao": "02:28"},
+                    {"titulo": "Not a Second Time", "duracao": "02:08"},
+                    {"titulo": "Money (That's What I Want)", "duracao": "02:47"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "Queen",
+        "discos": [
+            {
+                "titulo": "A Night at the Opera",
+                "ano_lancamento": 1975,
+                "musicas": [
+                    {"titulo": "Death on Two Legs (Dedicated to...)", "duracao": "03:43"},
+                    {"titulo": "Lazing on a Sunday Afternoon", "duracao": "01:07"},
+                    {"titulo": "I'm in Love with My Car", "duracao": "03:05"},
+                    {"titulo": "You're My Best Friend", "duracao": "02:52"},
+                    {"titulo": "'39", "duracao": "03:31"},
+                    {"titulo": "Sweet Lady", "duracao": "04:03"},
+                    {"titulo": "Seaside Rendezvous", "duracao": "02:15"},
+                    {"titulo": "The Prophet's Song", "duracao": "08:21"},
+                    {"titulo": "Love of My Life", "duracao": "03:39"},
+                    {"titulo": "Good Company", "duracao": "03:26"},
+                    {"titulo": "Bohemian Rhapsody", "duracao": "05:55"},
+                    {"titulo": "God Save the Queen", "duracao": "01:11"}
+                ]
+            },
+            {
+                "titulo": "News of the World",
+                "ano_lancamento": 1977,
+                "musicas": [
+                    {"titulo": "We Will Rock You", "duracao": "02:02"},
+                    {"titulo": "We Are the Champions", "duracao": "02:59"},
+                    {"titulo": "Sheer Heart Attack", "duracao": "03:26"},
+                    {"titulo": "All Dead, All Dead", "duracao": "03:10"},
+                    {"titulo": "Spread Your Wings", "duracao": "04:34"},
+                    {"titulo": "Fight from the Inside", "duracao": "03:03"},
+                    {"titulo": "Get Down, Make Love", "duracao": "03:51"},
+                    {"titulo": "Sleeping on the Sidewalk", "duracao": "03:06"},
+                    {"titulo": "Who Needs You", "duracao": "03:07"},
+                    {"titulo": "It's Late", "duracao": "06:27"},
+                    {"titulo": "My Melancholy Blues", "duracao": "03:29"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "Pink Floyd",
+        "discos": [
+            {
+                "titulo": "The Dark Side of the Moon",
+                "ano_lancamento": 1973,
+                "musicas": [
+                    {"titulo": "Speak to Me", "duracao": "01:13"},
+                    {"titulo": "Breathe", "duracao": "02:43"},
+                    {"titulo": "On the Run", "duracao": "03:30"},
+                    {"titulo": "Time", "duracao": "06:53"},
+                    {"titulo": "The Great Gig in the Sky", "duracao": "04:36"},
+                    {"titulo": "Money", "duracao": "06:22"},
+                    {"titulo": "Us and Them", "duracao": "07:49"},
+                    {"titulo": "Any Colour You Like", "duracao": "03:26"},
+                    {"titulo": "Brain Damage", "duracao": "03:50"},
+                    {"titulo": "Eclipse", "duracao": "02:04"}
+                ]
+            },
+            {
+                "titulo": "Wish You Were Here",
+                "ano_lancamento": 1975,
+                "musicas": [
+                    {"titulo": "Shine On You Crazy Diamond (Parts I–V)", "duracao": "13:40"},
+                    {"titulo": "Welcome to the Machine", "duracao": "07:31"},
+                    {"titulo": "Have a Cigar", "duracao": "05:08"},
+                    {"titulo": "Wish You Were Here", "duracao": "05:34"},
+                    {"titulo": "Shine On You Crazy Diamond (Parts VI–IX)", "duracao": "12:29"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "The Rolling Stones",
+        "discos": [
+            {
+                "titulo": "The Rolling Stones",
+                "ano_lancamento": 1964,
+                "musicas": [
+                    {"titulo": "Route 66", "duracao": "02:20"},
+                    {"titulo": "I Just Want to Make Love to You", "duracao": "02:17"},
+                    {"titulo": "Honest I Do", "duracao": "02:09"},
+                    {"titulo": "Mona (I Need You Baby)", "duracao": "03:33"},
+                    {"titulo": "Now I've Got a Witness", "duracao": "02:29"},
+                    {"titulo": "Little by Little", "duracao": "02:39"},
+                    {"titulo": "I'm a King Bee", "duracao": "02:35"},
+                    {"titulo": "Carol", "duracao": "02:33"},
+                    {"titulo": "Tell Me (You're Coming Back)", "duracao": "04:06"},
+                    {"titulo": "Can I Get a Witness", "duracao": "02:55"},
+                    {"titulo": "You Can Make It If You Try", "duracao": "02:01"},
+                    {"titulo": "Walking the Dog", "duracao": "03:10"}
+                ]
+            },
+            {
+                "titulo": "Out of Our Heads",
+                "ano_lancamento": 1965,
+                "musicas": [
+                    {"titulo": "Mercy Mercy", "duracao": "02:47"},
+                    {"titulo": "Hitch Hike", "duracao": "02:25"},
+                    {"titulo": "The Last Time", "duracao": "03:41"},
+                    {"titulo": "That's How Strong My Love Is", "duracao": "02:25"},
+                    {"titulo": "Good Times", "duracao": "01:58"},
+                    {"titulo": "I'm All Right", "duracao": "02:24"},
+                    {"titulo": "(I Can't Get No) Satisfaction", "duracao": "03:43"},
+                    {"titulo": "Cry to Me", "duracao": "03:09"},
+                    {"titulo": "The Under Assistant West Coast Promotion Man", "duracao": "03:20"},
+                    {"titulo": "Play with Fire", "duracao": "02:14"},
+                    {"titulo": "The Spider and the Fly", "duracao": "03:38"},
+                    {"titulo": "One More Try", "duracao": "01:58"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "Nirvana",
+        "discos": [
+            {
+                "titulo": "Bleach",
+                "ano_lancamento": 1989,
+                "musicas": [
+                    {"titulo": "Blew", "duracao": "02:55"},
+                    {"titulo": "Floyd the Barber", "duracao": "02:18"},
+                    {"titulo": "About a Girl", "duracao": "02:48"},
+                    {"titulo": "School", "duracao": "02:42"},
+                    {"titulo": "Love Buzz", "duracao": "03:35"},
+                    {"titulo": "Paper Cuts", "duracao": "04:06"},
+                    {"titulo": "Negative Creep", "duracao": "02:56"},
+                    {"titulo": "Scoff", "duracao": "04:10"},
+                    {"titulo": "Swap Meet", "duracao": "03:03"},
+                    {"titulo": "Mr. Moustache", "duracao": "03:24"},
+                    {"titulo": "Sifting", "duracao": "05:22"}
+                ]
+            },
+            {
+                "titulo": "Nevermind",
+                "ano_lancamento": 1991,
+                "musicas": [
+                    {"titulo": "Smells Like Teen Spirit", "duracao": "05:01"},
+                    {"titulo": "In Bloom", "duracao": "04:14"},
+                    {"titulo": "Come as You Are", "duracao": "03:39"},
+                    {"titulo": "Breed", "duracao": "03:03"},
+                    {"titulo": "Lithium", "duracao": "04:17"},
+                    {"titulo": "Polly", "duracao": "02:56"},
+                    {"titulo": "Territorial Pissings", "duracao": "02:22"},
+                    {"titulo": "Drain You", "duracao": "03:43"},
+                    {"titulo": "Lounge Act", "duracao": "02:37"},
+                    {"titulo": "Stay Away", "duracao": "03:32"},
+                    {"titulo": "On a Plain", "duracao": "03:16"},
+                    {"titulo": "Something in the Way", "duracao": "03:51"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "AC/DC",
+        "discos": [
+            {
+                "titulo": "High Voltage",
+                "ano_lancamento": 1975,
+                "musicas": [
+                    {"titulo": "Baby, Please Don't Go", "duracao": "04:50"},
+                    {"titulo": "She's Got Balls", "duracao": "04:51"},
+                    {"titulo": "Little Lover", "duracao": "05:39"},
+                    {"titulo": "Stick Around", "duracao": "04:42"},
+                    {"titulo": "Soul Stripper", "duracao": "06:25"},
+                    {"titulo": "You Ain't Got a Hold on Me", "duracao": "03:31"},
+                    {"titulo": "Love Song", "duracao": "05:14"},
+                    {"titulo": "Show Business", "duracao": "04:46"}
+                ]
+            },
+            {
+                "titulo": "Highway to Hell",
+                "ano_lancamento": 1979,
+                "musicas": [
+                    {"titulo": "Highway to Hell", "duracao": "03:28"},
+                    {"titulo": "Girls Got Rhythm", "duracao": "03:23"},
+                    {"titulo": "Walk All Over You", "duracao": "05:10"},
+                    {"titulo": "Touch Too Much", "duracao": "04:24"},
+                    {"titulo": "Beating Around the Bush", "duracao": "03:55"},
+                    {"titulo": "Shot Down in Flames", "duracao": "03:22"},
+                    {"titulo": "Get It Hot", "duracao": "02:24"},
+                    {"titulo": "If You Want Blood (You've Got It)", "duracao": "04:36"},
+                    {"titulo": "Love Hungry Man", "duracao": "04:17"},
+                    {"titulo": "Night Prowler", "duracao": "06:13"}
+                ]
+            }
+        ]
+    },
+    {
+        "banda": "Metallica",
+        "discos": [
+            {
+                "titulo": "Kill 'Em All",
+                "ano_lancamento": 1983,
+                "musicas": [
+                    {"titulo": "Hit the Lights", "duracao": "04:17"},
+                    {"titulo": "The Four Horsemen", "duracao": "07:13"},
+                    {"titulo": "Motorbreath", "duracao": "03:08"},
+                    {"titulo": "Jump in the Fire", "duracao": "04:42"},
+                    {"titulo": "(Anesthesia) Pulling Teeth", "duracao": "04:15"},
+                    {"titulo": "Whiplash", "duracao": "04:09"},
+                    {"titulo": "Phantom Lord", "duracao": "05:02"},
+                    {"titulo": "No Remorse", "duracao": "06:24"},
+                    {"titulo": "Seek & Destroy", "duracao": "06:55"},
+                    {"titulo": "Metal Militia", "duracao": "06:05"}
+                ]
+            },
+            {
+                "titulo": "Master of Puppets",
+                "ano_lancamento": 1986,
+                "musicas": [
+                    {"titulo": "Battery", "duracao": "05:10"},
+                    {"titulo": "Master of Puppets", "duracao": "08:35"},
+                    {"titulo": "The Thing That Should Not Be", "duracao": "06:32"},
+                    {"titulo": "Welcome Home (Sanitarium)", "duracao": "06:28"},
+                    {"titulo": "Disposable Heroes", "duracao": "08:16"},
+                    {"titulo": "Leper Messiah", "duracao": "05:38"},
+                    {"titulo": "Orion", "duracao": "08:27"},
+                    {"titulo": "Damage, Inc.", "duracao": "05:31"}
+                ]
+            }
+        ]
+    }
+]

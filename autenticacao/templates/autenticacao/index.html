@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+<body>
+    <header>
+        <h1>Seja bem-vindo!</h1>
+        <h4>Escolha uma aplicação</h4>
+    </header>
+
+    <nav>
+        {% if request.user.is_authenticated %}
+                Username: {{ request.user.username }}
+                <a href="{% url 'autenticacao:logout' %}"><button>Logout</button></a>
+            {% else %}
+                <a href="{% url 'autenticacao:login' %}"><button>Login</button></a>
+            {% endif %}
+
+        <a href="{% url 'bandas:bandas' %}">BANDAS</a>
+        <a href="{% url 'curso:curso' %}">CURSO</a>
+
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+
+</body>
+</html>

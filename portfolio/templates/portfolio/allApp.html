@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends 'portfolio/layout.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Images</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .image-grid div {
+            text-align: center;
+        }
+
+        .image-grid img {
+            max-width: 100%;
+            width: 300px;  /* Set a fixed width for consistency */
+            height: 300px; /* Set a fixed height for consistency */
+            object-fit: cover; /* Ensure images cover the area without distortion */
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #bb86fc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 36px;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicaçoes WEB</h1>
+    <div class="image-grid">
+        {% for image in images %}
+
+
+           <div>
+                {% if image.lei_image %}
+                    <a href="/curso/" target="_blank">
+                        <img src="{{ image.lei_image.url }}" alt="Lei Image">
+                        <p><a href="/curso/" class="button-link" target="_blank">Lei</a></p>
+                    </a>
+                {% endif %}
+            </div>
+              <div>
+                {% if image.meteo_image %}
+                    <a href="/meteo/" target="_blank">
+                        <img src="{{ image.meteo_image.url }}" alt="Meteo Image">
+                        <p><a href="/meteo/" class="button-link" target="_blank">Meteo</a></p>
+                    </a>
+                {% endif %}
+            </div>
+            <div>
+                {% if image.bandas_image %}
+                    <a href="/bandas/" target="_blank">
+                        <img src="{{ image.bandas_image.url }}" alt="Bandas Image">
+                        <p><a href="/band/" class="button-link" target="_blank">Bandas</a></p>
+                    </a>
+                {% endif %}
+            </div>
+
+            <div>
+                {% if image.artigos_image %}
+                    <a href="/artigos/" target="_blank">
+                        <img src="{{ image.artigos_image.url }}" alt="Artigos Image">
+                        <p><a href="/artigos/" class="button-link" target="_blank">Artigos</a></p>
+                    </a>
+                {% endif %}
+            </div>
+
+        {% endfor %}
+    </div>
+</body>
+</html>
+{% endblock %}

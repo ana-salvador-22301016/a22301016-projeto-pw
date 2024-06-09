@@ -1,0 +1,82 @@
+
+        /* Resetting default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for the entire page */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+        }
+
+        /* Header styling */
+        header {
+            background-color:#9932cc; /* Purple (hex code: #8a2be2) */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        main {
+            flex: 1; /* Let main content grow to fill remaining space */
+            padding: 20px;
+            text-align: center;
+            color:white;
+        }
+
+            /* Center the section */
+        h1 {
+                font-size: 41px;
+    color: #BB86FC;
+    margin-top: 25px;
+    margin-left: 61px;
+        }
+        .content {
+    margin-left: 45px;
+    margin-bottom: -57px;
+    margin-top: -20px;
+    text-align: centre;
+    color: white;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #9932cc; /* Purple (hex code: #8a2be2) */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #9932cc; /* Dark Purple (hex code: #9932cc) */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease;
+        }
+
+
+
+        button:hover {
+            background-color: #800080; /* Dark Magenta (hex code: #800080) */
+        }

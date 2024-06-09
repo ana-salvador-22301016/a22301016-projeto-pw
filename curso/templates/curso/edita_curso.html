@@ -1,0 +1,27 @@
+{% extends 'curso/layout.html' %}
+
+{% block content %}
+    <h3>Edita Curso</h3>
+
+    <form action="{% url 'curso:edita_curso' curso.id %}" method="post" enctype='multipart/form-data'>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Guardar">
+    </form>
+
+    {% if user.is_authenticated %}
+        {% for group in user.groups.all %}
+            {% if group.name == 'editores_curso' %}
+                <a href="{% url 'curso:curso' %}">
+                    <button>Cancelar</button>
+                </a>
+            {% endif %}
+        {% endfor %}
+        <a href="{% url 'curso:apaga_curso' curso.id %}">
+            <button>Apagar curso</button>
+        </a>
+    {% endif %}
+
+    <button type="button" onclick="window.history.back()">Cancelar</button>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h3>Edita Banda</h3>
+
+    <form action="{% url 'bandas:edita_banda' banda.id %}" method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Guardar">
+    </form>
+
+    {% if user.is_authenticated %}
+        {% for group in user.groups.all %}
+            {% if group.name == 'editores_bandas' %}
+                <a href="{% url 'bandas:banda' banda.id %}">
+                    <button>Cancelar</button>
+                </a>
+            {% endif %}
+        {% endfor %}
+        <a href="{% url 'bandas:apaga_banda' banda.id %}">
+            <button>Apagar banda</button>
+        </a>
+    {% endif %}
+
+    <button type="button" onclick="window.history.back()">Cancelar</button>
+
+{% endblock %}

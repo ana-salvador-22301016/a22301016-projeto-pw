@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Articles</title>
+        <link rel="stylesheet" href="{% static 'portfolio1/estilo.css' %}">
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Articles</h1>
+        <a href="{% url 'artigos:index_view' %}"><button>Articles</button></a>
+        <p><a href="/"  target="_blank">Portfolio</a></p>
+
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Universidade Lusófona</p>
+    </footer>
+</body>
+</html>

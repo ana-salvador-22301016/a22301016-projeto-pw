@@ -1,0 +1,103 @@
+/* Configurações gerais */
+body {
+    background: linear-gradient(to right, #add8e6, #87ceeb); /* Gradiente azul bebê */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Fonte Google Montserrat */
+    color: #333; /* Texto cinza escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+/* Estilo da navegação */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #666;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+nav ul li a:hover {
+    background-color: #999;
+    color: #fff; /* Mantém o texto branco */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixo no rodapé da página */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo de links e botões */
+a {
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6495ed;
+}
+
+/* Estilo de botões primários */
+button, .btn-primary {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #6495ed;
+    transform: scale(1.05);
+}
+
+/* Adicione aqui estilos específicos para elementos adicionais da aplicação */

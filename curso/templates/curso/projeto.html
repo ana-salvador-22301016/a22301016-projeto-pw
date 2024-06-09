@@ -1,0 +1,43 @@
+<!-- projeto.html -->
+{% extends 'curso/layout.html' %}
+
+{% block content %}
+
+{% for projeto in projetos %}
+
+    <ul>
+        {% for disciplina in projeto.disciplinas.all %}
+            <h3>{{ disciplina.nome }}</h3>
+       {% endfor %}
+    </ul>
+    <h5><li>{{ projeto.nome }}</li></h5>
+    <p>Descrição: {{ projeto.descricao }}</p>
+    <p>Conceitos Aplicados: {{ projeto.conceitoAplicado }}</p>
+    <p>Tecnologias Utilizadas: {{ projeto.tecnologiaUtilizada }}</p>
+
+    {% if projeto.imagem %}
+        <img src="{{ projeto.imagem.url }}">
+    {% endif %}
+
+    <h5>Links</h5>
+    <p>Vídeo no Youtube: <a href="{{ projeto.linkYoutube }}">{{ projeto.linkYoutube }}</a></p>
+    <p>Repositório GitHub: <a href="{{ projeto.linkGitHub }}">{{ projeto.linkGitHub }}</a></p>
+
+    <a href="{% url 'curso:edita_projeto' projeto.id %}">
+                <button>Editar projeto</button>
+    </a>
+
+    {% if projeto.disciplinas and projeto.disciplinas.id %}
+    <a href="{% url 'curso:novo_projeto' projeto.disciplinas.id %}">
+        <button>Inserir novo projeto</button>
+    </a>
+    {% endif %}
+
+     <a href="{% url 'curso:apaga_projeto' projeto.id %}">
+      <button>Apaga projeto</button>
+    </a>
+
+{% endfor %}
+
+
+{% endblock %}

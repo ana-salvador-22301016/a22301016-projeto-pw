@@ -1,0 +1,157 @@
+/* Selecionador Universal */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;  /* Cor de fundo do website */
+    color: #333;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #d1d9e6;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #bcc7d8;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo para a navegação */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #333; /* Cor do link */
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #c5d4e6; /* Cor de fundo */
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+nav a:link {
+    color: #333; /* Cor dos links não visitados */
+}
+
+nav a:visited {
+    color: #666; /* Cor dos links visitados */
+}
+
+nav a:hover {
+    background-color: #a7b9d3; /* Cor de fundo ao passar o rato */
+    color: #fff; /* Cor do texto ao passar o rato */
+}
+
+nav a:active {
+    background-color: #8fa3bf; /* Cor de fundo ao clicar */
+    color: #fff; /* Cor do texto ao clicar */
+}
+
+/* Efeitos before e after ao passar o rato */
+nav a::before, nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff; /* Cor do efeito */
+    transition: width 0.3s ease;
+}
+
+nav a::before {
+    top: 0;
+    left: 50%;
+}
+
+nav a::after {
+    bottom: 0;
+    right: 50%;
+}
+
+nav a:hover::before, nav a:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #d1d9e6;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #bcc7d8;
+}
+
+/* Estilo para o texto da biografia */
+.bio p::first-letter {
+    font-size: 150%; /* Tamanho maior para a primeira letra */
+    color: #1e90ff; /* Cor personalizada */
+}
+
+.bio p::first-line {
+    font-weight: bold; /* Texto da primeira linha em negrito */
+}
+
+/* Estilo para as imagens */
+img {
+    border-left: 8px solid #1e90ff; /* Borda esquerda azul */
+    border-right: 8px solid #ff6347; /* Borda direita vermelha */
+    border-top: 8px solid #32cd32; /* Borda superior verde */
+    border-bottom: 8px solid #ff69b4; /* Borda inferior rosa */
+    width: 100%; /* Imagens ocupam toda a largura do contêiner */
+    max-width: 400px; /* Largura máxima para garantir que as imagens não fiquem muito grandes */
+    margin: 20px auto; /* Centraliza as imagens na página */
+    display: block; /* Permite ajustar as margens automaticamente */
+}
+
+/* Estilize os textos de ajuda */
+.helptext {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    color: #666;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilize os campos dos formulários */
+input[type="text"], input[type="number"], input[type="date"], input[type="url"], textarea {
+    position: relative; /* Defina o posicionamento relativo para permitir posicionamento absoluto do texto de ajuda */
+}
+
+/* Estilize os campos dos formulários quando estão focados para exibir o texto de ajuda */
+input[type="text"]:focus + .helptext,
+input[type="number"]:focus + .helptext,
+input[type="date"]:focus + .helptext,
+input[type="url"]:focus + .helptext,
+textarea:focus + .helptext {
+    display: block; /* Exibir o texto de ajuda quando o campo está focado */
+}
+
